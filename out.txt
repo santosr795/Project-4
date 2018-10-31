@@ -1,0 +1,27 @@
+Name ron san
+Address 12123 fake st 
+Phone 12123 fake st 
+LateFee yes
+In or Out State yes
+In Campus Food Plan Yes
+Type of meal plan 1
+Credits 18
+
+Name jenny  Salvo
+Address 12 kas st 
+Phone 12 kas st 
+LateFee no
+In or Out State yes
+In Campus Food Plan Yes
+Type of meal plan 0
+Credits 19
+
+Name Alex Mezea
+Address 1234 fake dr
+Phone 1234 fake dr
+LateFee yes
+In or Out State no
+In Campus Food Plan Yes
+Type of meal plan 0
+Credits 16
+

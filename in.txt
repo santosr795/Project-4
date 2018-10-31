@@ -1,0 +1,50 @@
+ron
+san
+12123 fake st 
+571 322 5466
+yes
+yes
+yes
+yes
+1
+18
+jenny 
+Salvo
+12 kas st 
+703 213 4354
+no
+yes
+no
+no
+0
+19
+Alex
+Mezea
+1234 fake dr
+703 956 1345
+yes
+no
+yes
+no
+0
+16
+Jacob
+Tonni
+6024 ButterCut ct 
+703 455 6581
+yes
+yes
+yes
+yes
+1
+21
+Ronnn
+sas
+1231 mem st 
+703 983 3124
+yes
+no
+yes
+yes
+2
+18
