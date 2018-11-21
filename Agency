@@ -1,0 +1,58 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Agency  {
+	/*
+	 private String agency;
+	private ArrayList<RealEstateListing> realEstateListingArray = new ArrayList<RealEstateListing>();
+	public Agency(String agency, String agencyFile)
+	{
+	//***	Constructor reads its file into an ArrayList
+	//*** don’t forget to close the Scanner
+//*** Here is the code to read a file
+      this.agency = agency; 
+	;
+       }
+	public void readFile(Scanner read)
+	{	
+	//*** The first number in the file is the number of listings.
+	//*** This sets the for loop
+	//***	A RealEstateListing can read itself. 		
+	}
+		
+	public ArrayList<RealEstateListing> style(String desiredStyle)
+	{
+	//*** Creates an ArrayList of for this criteria. 	
+	//*** Each criteria creates a list.	
+	 */
+	private String agency; 
+	private ArrayList<RealEstateListing> realEstateListingArray = new ArrayList<RealEstateListing>(); 
+	Agency(String agency, String agencyFiles){
+		
+		this.agency = agency;
+		Scanner readAgencyFile = TextFileIO.createTextRead(agencyFiles);
+		readFile(readAgencyFile);
+		readAgencyFile.close();
+		//Scanner readAgencyFile = readFile(readAgencyFile); 
+		//readAgencyFile.close(); 
+		
+		
+	}
+	public void readFile(Scanner read) {
+		/*
+		 * you going to have all your set method 
+		 * that will come from RealEstateListing.java. 
+		 */
+			int input; 
+			input = read.nextInt(); 
+		
+	}
+	public ArrayList<RealEstateListing> style(String desiredStyle){
+				
+	for(int i = 0; i < 20; i++) {
+	
+	}
+		
+		return realEstateListingArray; 
+	}
+
+}
