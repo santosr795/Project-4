@@ -1,0 +1,94 @@
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class RealEstateAgent //*** this is the largest class
+{
+	//*** ArrayLists that I used.
+	private ArrayList<Agency> agencyArray = new ArrayList<Agency>();	
+	private ArrayList<RealEstateListing> listingsFromOneAgency = new ArrayList<RealEstateListing>();
+	private ArrayList<RealEstateListing> finalArrayListOfRealEstateListings = new 
+ArrayList<RealEstateListing>();
+	private String answerSoFar = "";
+	private Agency century21 ;
+	private Agency reMax = null;
+	private Agency mcEnearney = null;
+	private Agency longAndFoster = null;
+	Scanner keyboard = new Scanner(System.in);
+	public RealEstateAgent()
+	{	
+      /* Create real-estate companies here.  
+       Give them a name and pass in their text file. 
+       Here is the code.*/
+      //century21 = new Agency("Century 21","Century21.txt");
+	}
+	public  String listingsChosen()
+	{
+		getAgenciesForTheExhibition();//*** this is an ArrayList
+		//*** I read a String and used a Scanner instance to scan a string 
+       //*** for the integers integers. See handout for an example of this.
+		
+		int homeCriterion = pickHomeCritetion();
+		switch (homeCriterion)
+		{
+		case 1:// Style
+			int style = getStyle();
+			finalArrayListOfRealEstateListings = style(style, agencyArray);
+			break;
+		
+		default:
+			System.out.println("bad topic Selection choice " + homeCriterion);
+			System.exit(0);
+		}// switch
+	//*** I have a method that creates a string of the agencies used.
+	//*** I have a method that takes the final list of homes  
+	//*** and puts them in a string that is returned. 
+
+	
+	return""; 
+	
+	
+	}
+	private int pickHomeCritetion() {
+		int criteria; 
+		System.out.println("1) Style \n2) Number of BathRoom \n3) Number of BedRoom \n4) Lot Size \n5) Age \n5) Price \n6) Distance from Work \n7) Jurisdiction");
+		return criteria = keyboard.nextInt();
+		
+	}
+	private int getStyle() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	private  void getAgenciesForTheExhibition() {
+		Agency Agent; 
+		System.out.println("Pick an agency \n1) Century 21 \n2) Long and Foster \n3) McEnearny \n4) ReMax");
+		String agencyPicker = keyboard.nextLine();
+		int agenciesPick = Integer.parseInt(agencyPicker);
+		switch(agenciesPick) {
+		case 1: //Century21
+			century21 = new Agency("Century 21","Century.txt");
+			break;
+		case 2: //LongAndFoster
+			break;
+		case 3://McEnearney 
+			break; 
+		case 4://ReMax
+			break;
+		default:
+			System.out.println("That is not a valid Agency");
+			System.exit(0);
+				
+		}//End Switch
+		
+		
+		
+	}
+	public ArrayList<RealEstateListing> style(int styleType, ArrayList<Agency> agencyArray)
+	{
+       //*** ask each agency to give a list that satisfies the requested style.
+	}
+
+       //*** For each criteria there are similar pairs of methods.	
+	//*** Work on each pair one pair at a time and make them 
+       //*** work before you do the next pair.
+//	return
+}
